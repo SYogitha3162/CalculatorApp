@@ -1,0 +1,44 @@
+:root {
+    --black1: #22252d;
+    --blue1: #262933;
+    --white1: white;
+    --body: white;
+    --button1: white;
+    --bar-color: grey;
+    --ope-color: #EB6666;
+    --per-color: #26FED7;
+    --box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+    --icon-color: rgba(255, 255, 255, 0.925);
+    --key-bg-color: #292d36;
+  }
+  
+  /*Styling For Light Mode*/
+  .dark-theme {
+    --blue1: white;
+    --white1: black;
+    --black1: white;
+    --body: #22252d;
+    --button1: black;
+    --key-bg-color: #fff;
+  }
+  $color_1: var(--icon-color);
+/*calculator color*/
+$color_2: var(--button1);
+/*operator colors*/
+$color_3: var(--ope-color);
+/*percent/brackets color*/
+$color_4: var(--per-color);
+$color_5: var(--white1);
+$color_6: var(--body);
+/*font family*/
+$font-family_1: sans-serif;
+/*app background color background-color: var(--body);*/
+$background-color_1: var(--body);
+/*background-color: var(--blue1);cal color*/
+$background-color_2: var(--key-bg-color);
+
+/*color of bar on hover*/
+$background-color_3: var(--blue1);
+$background-color_4: var(--bar-color);
+/*calculator app*/
+$background-color_5: black;

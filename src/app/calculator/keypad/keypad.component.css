@@ -1,0 +1,56 @@
+.keys {
+  background-color: var(--key-bg-color);
+  margin-top: 10px;
+  padding: 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+.keys .key {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  background-color: var(--blue1);
+  height: 0;
+  padding-top: 100%;
+  border-radius: 1rem;
+  transition: 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.keys .key:hover {
+  box-shadow: inset 0px 0px 8px oldlace;
+}
+.keys span {
+  color: var(--body);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.key.operator span {
+  color: var(--ope-color);
+}
+
+.key.symbol span {
+  color: var(--per-color);
+}
+.bar{
+  height: 3px;
+  align-self: center;
+  background-color: var(--bar-color);
+  width: 290%;
+  left:  80%;
+  margin-right: -50%;
+  transform: translate(48px, 10px);
+  margin-top: -10px;
+}
+.bar:hover {
+  background-color: black;
+}/*# sourceMappingURL=keypad.component.css.map */

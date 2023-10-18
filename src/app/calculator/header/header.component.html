@@ -1,0 +1,31 @@
+<div class="app">
+    <!-- Calualtor is used as container -->
+    <div class="calculator">
+      <div class="flex-gap">
+        <div class="rounded-box">
+          <i id="sun1" class="fa fa-sun-o" aria-hidden="true"></i>&nbsp;
+          <i id="moon1" class="fa fa-moon-o" aria-hidden="true"></i>
+        </div>
+        <span class="time">9:41</span>
+        <!--styles for icons such as battery, wifi, signal-->
+        <div class="icons">
+          <i id="symbols" class="fa fa-signal" aria-hidden="true"></i>
+          <i id="symbols" class="fa fa-wifi" aria-hidden="true"></i>
+          <i id="symbols" class="fa fa-battery-full" aria-hidden="true"></i>
+        </div>
+      </div>
+     <div>
+      <app-display [input]="input" [output]="res.toString()"></app-display>
+    </div>
+
+     <div>
+      <app-keypad (buttonClick)="onButtonClick($event)"></app-keypad>
+      </div>
+    
+    <!--selector for the history-->
+  </div>
+    <app-history [history]="history" #historyDisplay></app-history>
+  </div>
+    
+ 
+    

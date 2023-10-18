@@ -1,0 +1,76 @@
+.display {
+    min-height: 115px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    flex: 1 1 0%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .display .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: -20px;
+    padding-bottom: 10px;
+    max-height: 180px;
+    height: auto;
+  }
+  .display .input {
+    max-width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+    color: var(--button1);
+    overflow: hidden;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: normal;
+  }
+  .display .output {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    color: var(--button1);
+  }
+  .display .operator {
+    color: var(--ope-color);
+  }
+  .display .brackets {
+    color: var(--per-color);
+  }
+  .display .percent {
+    color: var(--per-color);
+  }
+  
+  @media (max-width: 800px) {
+    .display {
+      min-height: 250px;
+      padding: 2rem;
+    }
+    .display.input {
+      font-size: 1.4rem;
+      margin-bottom: 0.7rem;
+    }
+    .display.output {
+      font-size: 3.5rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .display {
+      min-height: 150px;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+    .display.input {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+    .display.output {
+      font-size: 2rem;
+    }
+  }/*# sourceMappingURL=display.component.css.map */

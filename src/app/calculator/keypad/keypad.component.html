@@ -1,0 +1,8 @@
+
+<!--Loop through the buttons  array defined in components-->
+<div #keys class="keys">
+  <div *ngFor="let button of buttons" [class]="button.class" (click)="onButtonClick(button.value)">
+    <span *ngIf="button.value !== 'undo'">{{ button.label }}</span>
+    <span *ngIf="button.value === 'undo'"><i class="fa fa-undo"></i></span>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--body);
+}
+
+/*Styling For Dark Mode*/
+.time {
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  margin-top: -35px;
+}
+
+/*Button for star moon*/
+.rounded-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 24px;
+  margin: auto;
+  border: solid 5px transparent;
+  margin-top: 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: var(--key-bg-color);
+}
+
+/*icons is class for wifi,batter*/
+.icons {
+  display: flex-start;
+  font-size: 0.7rem;
+  padding-left: 210px;
+  transform: translate(-10px, -20px);
+  margin-top: -15px;
+}
+
+.icons i {
+  margin-right: 5px;
+}
+
+/*style for calculator*/
+.calculator {
+  background-color: var(--blue1);
+  width: 100%;
+  max-width: 267px;
+  max-height: 545px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  margin-block-start: -20px;
+  overflow: hidden;
+  -webkit-margin-before: -20px;
+}
+
+/*display is nested due to parent element
+  so we have nested input/output/operator/brackets/content */
+.flex-gap {
+  color: var(--white1);
+}
+
+
+@media (max-width: 800px) {
+  .calculator {
+    height: auto;
+    max-width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .display {
+    min-height: 150px;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .display.input {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .display.output {
+    font-size: 2rem;
+  }
+  .keys {
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 60px 60px 60px 60px;
+    grid-row-gap: 2.2rem;
+    grid-column-gap: 2.2rem;
+  }
+  .keys.key span {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=calculator.component.css.map */

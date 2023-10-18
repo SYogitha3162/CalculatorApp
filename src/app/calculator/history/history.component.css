@@ -1,0 +1,18 @@
+h4 {
+    padding-top: -450px;
+    height: 550px;
+  }
+  
+  .rightside {
+    padding-inline-start: 10px;
+    top: 60px;
+  }
+  
+  .history {
+    position: absolute;
+    transform: translateY(-550px);
+    overflow-y: auto;
+    overflow-y: scroll;
+    height: 780px;
+    width: 150px;
+  }
